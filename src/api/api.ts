@@ -1,3 +1,4 @@
+// импортирую класс ClientBase, созданный ранее.
 import { ClientBase } from './client-base';
 
 //----------------------
@@ -9,6 +10,8 @@ import { ClientBase } from './client-base';
 /* eslint-disable */
 // ReSharper disable InconsistentNaming
 
+
+// объявляю класс Client, он наследуется от ClientBase и может использовать его метод !transformOptions!
 export class Client extends ClientBase {
     private http: { fetch(url: RequestInfo, init?: RequestInit): Promise<Response> };
     private baseUrl: string;
